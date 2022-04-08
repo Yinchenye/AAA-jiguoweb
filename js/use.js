@@ -25,6 +25,12 @@ $(function () {
     i = 2;
   });
 
+  $.each($(".little-title span"), function (eq, ele) {
+    if ($(ele).hasClass("span_style")) {
+      console.log(eq);
+      console.log(ele);
+    }
+  });
   // 全部板块
   $(".all").on("click", function () {
     if (i == 1) {

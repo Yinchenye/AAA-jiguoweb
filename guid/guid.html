@@ -5,12 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>导购</title>
-    <link rel="stylesheet" href="../css/style/guide.css" />
-    <link rel="stylesheet" href="../css/style/play.css" />
+    <!-- 链接jquery文件 -->
     <script src="../js/jquery.min.js"></script>
-    <script src="../js/ajax.js"></script>
-    <script src="../js/guid.js"></script>
+    <!-- 链接模板引擎文件 -->
     <script src="../js/art-template.js"></script>
+    <!-- 链接封装的ajax文件 -->
+    <script src="../js/ajax.js"></script>
+    <!-- 链接公共部分的css文件shouye.css -->
+    <link rel="stylesheet" href="../css/style/shouye.css" />
+    <!-- 链接公共部分的css文件play.css -->
+    <link rel="stylesheet" href="../css/style/play.css" />
+    <!-- 链接公共部分js文件shouoye.js -->
+    <script src="../js/shouye.js"></script>
+    <!-- 链接对应的css文件guide.css -->
+    <link rel="stylesheet" href="../css/style/guide.css" />
+    <!-- 链接对应的js文件guid.js -->
+    <script src="../js/guid.js"></script>
   </head>
   <body>
     <!-- 公共部分顶部导航栏 -->
@@ -18,16 +28,16 @@
       <img src="../img/logonew.png" alt="" width="130px;" />
       <ul class="clearfix">
         <li>
-          <a href="">首页</a>
+          <a href="../index.html">首页</a>
         </li>
         <li>
           <a href="../play/play.html" target="_blank">酷玩</a>
         </li>
         <li>
-          <a href="">导购</a>
+          <a href="../guid/guid.html">导购</a>
         </li>
         <li>
-          <a href="">试用</a>
+          <a href="../use/use.html" target="_blank">试用</a>
         </li>
         <li>
           <a href="">报告</a>
@@ -35,7 +45,8 @@
       </ul>
       <div id="search_register">
         <img src="../css/img/search.png" alt="" id="search" />
-        <button id="register">注册</button>
+        <span><a href="" id="register">注册</a></span>
+        <span><a href="" id="login">登录</a></span>
       </div>
     </div>
     <!-- 内容主体部分 -->

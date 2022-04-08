@@ -49,34 +49,177 @@ a{
     vertical-align: middle;
     cursor: pointer;
 }
-#register{
-    background-color:transparent;
+#register,
+#login{
     padding: 5px 5px;
-    border: 1px solid #F66964;
     color:#F66964;
     cursor: pointer;
+    width: 50px;
+    border: 1px solid coral;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+    margin-right: 10px;
 }
 /* 第二部分 */
 .second_img{
     width: 100%;
+    height: 300px;
     margin:0 auto;
+    background-image: url(../img/original.jpg);
+}
+.daojishi-max{
+    position: relative;
+    width: 1080px;
+    height: 100%;
+    margin:0 auto;
+}
+.daojishi{
+    position: absolute;
+    right:0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.doajishi-title{
+    color: white;
+    font-weight:400;
+}
+.doajishi-shenqing{
+    width: max-content;
+    margin: 0 auto;
+    line-height:80px;
+    color:white;
+}
+.doajishi-shenqing span{
+    background-color:#F7D29B;
+    padding: 10px 15px;
+    margin-right: 5px;
+}
+.time-value{
+    width: max-content;
+    margin: 0 auto;
+    color: white;
+}
+.immediately{
+    display: block;
+    width: 200px;
+    line-height: 45px;
+    margin: 0 auto;
+    margin-top:18px;
+    color:white;
+    text-align: center;
+    background-color:#FA5240;
+    border-radius:4px;
 }
 /* 第三部分 */
 
-/* 第四部分 */
-.fourth{
+/* 报告精选、导购精选、发现酷玩 */
+.fourth,
+.fifth,
+.sixth{
     width: 1080px;
     margin:0 auto;
 }
-.fourth_title{
+.fourth_title,
+.fifth_title,
+.sixth_title{
     width: 100%;
 }
 .baogao{
     float: left;
+    font-weight: 700;
+    font-size:18px;
+    margin-top:20px;
 }
 .more{
     float: right;
+    margin-top:20px;
+    color: red;
 }
+.fourth_content,
+.fifth_content,
+.sixth_content{
+    margin-top:20px;
+}
+.fourth_content li,
+.fifth_content li,
+.sixth_content li{
+    width: 245px;
+    height: 245px;
+    cursor: pointer;
+    margin-right: 12px;
+    margin-bottom: 20px;
+    background-color: white;
+    float: left;
+    border-radius:8px;
+    overflow: hidden;
+    position: relative;
+    margin-left: 12px;
+    transition: all .3s;
+}
+.fourth_content li:hover,
+.fifth_content li:hover,
+.sixth_content li:hover{
+    transform: translateY(-4px);
+    box-shadow: 0px 8px 20px 6px rgba(0, 0, 0,.2);
+}
+.fourth_content li img,
+.fifth_content li img,
+.sixth_content li img{
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.fourth_content li p,
+.fifth_content li p,
+.sixth_content li p{
+    margin-top:10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size:14px;
+}
+.fourth_content li div,
+.fifth_content li div,
+.sixth_content li div{
+    position:absolute;
+    right: 10px;
+    bottom: 20px;
+}
+.fourth_content li div span,
+.fifth_content li div span,
+.sixth_content li div span{
+    display: inline-block;
+    margin-right: 5px;
+    color:#BBBBBB;
+}
+.fourth_content li div span img,
+.fifth_content li div span img,
+.sixth_content li div span img{
+    width: 15px;
+}
+/* 第四部分报告精选 */
+.fourthmax{
+    width: 100%;
+    background-color: #F7F7F7;
+}
+.fourth_content .zuozhe{
+    position:absolute;
+    bottom:20px;
+    left:10px;
+    color:#BBBBBB;
+}
+/* 第六部分发现酷玩 */
+.sixthmax{
+    width: 100%;
+    background-color: #F7F7F7;
+}
+.sixth_content li .price{
+    position:absolute;
+    color:red;
+    bottom:20px;
+    left:10px
+}
+
 
 /* 公共部分底部 */
 .bottom-max{

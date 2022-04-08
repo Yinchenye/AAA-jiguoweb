@@ -48,14 +48,4 @@ $(function () {
     content_.innerHTML = html;
     ul.innerHTML = ul;
   });
-
-  // 返回顶部
-  $(".back").on("click", function () {
-    $("html,body").stop().animate(
-      {
-        scrollTop: 0,
-      },
-      "fast"
-    );
-  });
 });
