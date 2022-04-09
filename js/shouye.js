@@ -24,7 +24,40 @@ $(function () {
   }
 
   // 第三部分轮播图
+  function lunbo() {
+    get_("http://192.168.184.1:3000/useing/public");
+    var arr = [];
+    $.each(a, function (e, ele) {
+      arr.push(ele);
+    });
+    var newarr = arr.slice(0, 4);
+    var arr_ = arr.slice(4, 8);
+    var html = template("tpl_", newarr);
+    var ul_ = document.getElementsByClassName("ul_");
+    $(ul_).html(html);
+    var html_ = template("tp2", arr_);
+    var hou = document.getElementsByClassName("ul2");
+    $(hou).html(html_);
 
+    // 轮播图
+    var mySwiper = new Swiper(".swiper", {
+      direction: "horizontal", // 垂直切换选项
+      loop: true, // 循环模式选项
+      autoplay: true,
+      autoplay: {
+        delay: 1000, //1秒切换一次
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+      },
+
+      // 如果需要前进后退按钮
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  }
+  lunbo();
   // 第四部分报告精选部分
   function baogao() {
     get_("http://192.168.184.1:3000/report/new");
