@@ -1,0 +1,146 @@
+.body {
+    background-color: #a3a3a3;
+}
+
+a {
+    text-decoration: none;
+    color: #a3a3a3;
+    font-size: 12px;
+}
+
+.hander {
+    background-color: #f7f7f7;
+    display: block;
+    border-top: 1px #cfc1c1 solid;
+}
+
+.handers {
+    width: 1080px;
+    min-width: 1080px;
+    margin: 0 auto;
+}
+
+.onee {
+    color: #979797;
+    font-size: 13px;
+}
+
+.twoo {
+    width: 700px;
+    height: 4796px;
+    background-color: #fff;
+    border-radius: 6px;
+    border-bottom: 25px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.tw001>p {
+    color: #474747;
+    font-size: 26px;
+    padding-top: 20px;
+    padding-left: 25px;
+}
+
+.susu {
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.susu1 {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background: url(./img/tx.jpg) no-repeat;
+    float: left;
+}
+
+.susu>span {
+    font-size: 12px;
+    color: #a3a3a3;
+    margin: 0px 15px;
+}
+
+.susu2 {
+    font-size: 12px;
+    color: #a3a3a3;
+    float: right;
+    margin-right: 20px;
+}
+
+.thr {
+    border-top: 1px #a3a3a3 solid;
+    margin-top: 20px;
+}
+
+.thr>p {
+    font-family: '微软雅黑';
+    padding: 10px 16px;
+    font-size: 14px;
+}
+
+.thr>p>img {
+    padding-left: 10px;
+}
+
+.gang {
+    padding: 20px;
+    font-size: 14px;
+}
+
+.thr>.gangb {
+    font-size: 16px;
+    color: #333333;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+}
+
+.didi1 {
+    padding: 35px 0px 35px 20px;
+    font-size: 14px;
+    color: #a3a3a3;
+    font-family: '微软雅黑';
+    list-style: none;
+}
+
+.didi1>li>a {
+    font-size: 14px;
+}
+
+.fourr {
+    position: absolute;
+    width: 270px;
+    display: block;
+    right: -360px;
+    top: 0px;
+}
+
+.detailFeel {
+    background: #fff;
+    height: 108px;
+    border-radius: 6px;
+    font-size: 14px;
+    border: 1px solid #ebeaea;
+    box-shadow: 0 1px 1px 1px #eee;
+}
+
+.detailFeel dd:first-child {
+    border-right: 1px solid #ebeaea;
+}
+
+.detailFeel dd {
+    float: left;
+    width: 50%;
+    height: 108px;
+    display: table;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.detailFeel dd a {
+    display: table-cell;
+    width: 100%;
+    height: 108px;
+    vertical-align: middle;
+}

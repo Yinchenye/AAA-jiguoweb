@@ -23,6 +23,8 @@ $(function () {
     );
   }
 
+  // 第三部分轮播图
+
   // 第四部分报告精选部分
   function baogao() {
     get_("http://192.168.184.1:3000/report/new");
@@ -76,26 +78,18 @@ $(function () {
   // 第六部分发现酷玩
   function faxian() {
     get_("http://192.168.184.1:3000/play/new");
+    var arr = [];
     $.each(a, function (e, ele) {
       $.each(ele, function (i, ele_) {
-        var li = $("<li></li>");
-        $(".sixth_content").append(li);
-        var img = $("<img src=" + ele_.img + ">" + "<p>" + ele_.text + "</p>");
-        $(li).append(img);
-        var span_left = $("<span class=price>" + ele_.price + "</span>");
-        $(li).append(span_left);
-        var div = $("<div></div>");
-        $(li).append(div);
-        var xin = $(
-          "<span><img src=" + "./css/img/zan.png" + ">" + ele_.like + "</span>"
-        );
-        $(div).append(xin);
-        var zan = $(
-          "<span><img src=" + "./css/img/xin.png" + ">" + ele_.words + "</span>"
-        );
-        $(div).append(zan);
+        arr.push(ele_);
       });
     });
+    var newarr = arr.slice(0, 16);
+    var arr_ = arr.slice(16);
+    var html = template("tpl", newarr);
+    var ul_ = document.getElementsByClassName("sixth_content")[0];
+    // ul_.innerHTML="";
+    $(ul_).html(html);
   }
   faxian();
 

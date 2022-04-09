@@ -4,24 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>导购</title>
-    <!-- 链接jquery文件 -->
-    <script src="../js/jquery.min.js"></script>
-    <!-- 链接模板引擎文件 -->
-    <script src="../js/art-template.js"></script>
-    <!-- 链接封装的ajax文件 -->
-    <script src="../js/ajax.js"></script>
-    <!-- 链接公共部分的css文件shouye.css -->
+    <title>报告-最新</title>
     <link rel="stylesheet" href="../css/style/shouye.css" />
-    <!-- 链接公共部分的css文件play.css -->
-    <link rel="stylesheet" href="../css/style/play.css" />
-    <!-- 链接公共部分js文件shouoye.js -->
+    <link rel="stylesheet" href="../css/style/报告-最新.css" />
+    <script src="../js/jquery.min.js"></script>
     <script src="../js/shouye.js"></script>
-    <!-- 链接对应的css文件guide.css -->
-    <link rel="stylesheet" href="../css/style/guide.css" />
-    <!-- 链接对应的js文件guid.js -->
-    <script src="../js/guid.js"></script>
   </head>
+
   <body>
     <!-- 公共部分顶部导航栏 -->
     <div id="top_banner">
@@ -34,56 +23,62 @@
           <a href="../play/play.html" target="_blank">酷玩</a>
         </li>
         <li>
-          <a href="../guid/guid.html">导购</a>
+          <a href="../guid/guid.html" target="_blank">导购</a>
         </li>
         <li>
-          <a href="../use/use.html" target="_blank">试用</a>
+          <a href="">试用</a>
         </li>
         <li>
-          <a href="">报告</a>
+          <a href="./report/14.报告-最新.html">报告</a>
         </li>
       </ul>
       <div id="search_register">
         <img src="../css/img/search.png" alt="" id="search" />
-        <span
-          ><a href="../jiguo__/16.注册页面.html" target="_blank" id="register"
-            >注册</a
-          ></span
-        >
-        <span
-          ><a href="../jiguo__/19.登录页面.html" target="_blank" id="login"
-            >登录</a
-          ></span
-        >
+        <a href="../16.注册页面.html" id="register">注册</a>
+        <a href="../19.登录页面.html" id="login">登录</a>
       </div>
-    </div>
-    <!-- 内容主体部分 -->
-    <div class="guid-content">
-      <div class="guid-title clearfix">
-        <h1>导购清单</h1>
-        <div class="title clearfix">
-          <span class="zuixin border-bottom">最新</span>
-          <span class="zuire">最热</span>
-        </div>
-      </div>
-      <ul class="content clearfix">
-        <script type="text/html" id="tpl">
-          {{each data}}
-          <li class="clearfix">
-            <img src="{{$value.img}}" alt="" class="img_" />
-            <p>{{$value.text}}</p>
-            <div class="like-word">
-              <img src="../css/img/xinRedo.png" alt="" class="like-img" />
-              <span class="like">{{$value.like}}</span>
-              <img src="../css/img/reply.png" alt="" class="words-img" />
-              <span class="words">{{$value.words}}</span>
-            </div>
-          </li>
-          {{/each}}
-        </script>
-      </ul>
     </div>
 
+    <div class="reportTop">
+      <h1>体验报告</h1>
+    </div>
+
+    <div class="reportNav">
+      <a href="./14.报告-最新.html"><span class="on">最新</span></a>
+      <a href="./15.报告-最热.html"><span class="up">最热</span></a>
+    </div>
+
+    <div class="reportBox">
+      <div class="reportCenter">
+        <ul id="list"></ul>
+        <div class="bottom_bf">
+          <a href="JavaScript:;" class="bottom_btn">点击加载更多</a>
+          <span class="zq"></span>
+          <a href="" class="btn_up">正在加载中</a>
+        </div>
+      </div>
+      <div class="reportRight">
+        <h2>极果体验师</h2>
+        <img src="../img/tiyanImg.jpg" alt="" />
+        <h5>福利</h5>
+        <p>
+          第一时间体验新品，大众试用优先通过，还有定向邀请试用，新品玩到手软！
+        </p>
+        <h5>要求</h5>
+        <p>
+          是某个领域的大神级玩家，在社交网络或圈子里有大影响力，善写作会拍摄。
+        </p>
+        <h5>申请</h5>
+        <p>
+          1. 关注极果公众号：jguojguo
+          <br />
+          （或扫描下方二维码） <br />
+          2. 在公众号内回复：体验师
+        </p>
+        <h2 class="tx_o">关注我们</h2>
+        <img src="../img/myCode.jpg" alt="" />
+      </div>
+    </div>
     <!-- 公共部分底部 -->
     <div class="bottom-max">
       <div class="bottom clearfix">
@@ -104,10 +99,10 @@
           <dl class="bottom-right-dl">
             <dt>免费试用</dt>
             <dd>
-              <a href="">试用流程</a>
+              <a href="../18.免费试用.html">试用流程</a>
             </dd>
             <dd>
-              <a href="">如何提高成功率</a>
+              <a href="../18.免费试用.html">如何提高成功率</a>
             </dd>
           </dl>
           <dl class="bottom-right-dl">

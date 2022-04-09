@@ -1,0 +1,165 @@
+.try {
+    height: 62px;
+    padding: 20px 0px;
+    background-color: #f0f0f0;
+}
+
+.try1 {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.try2 {
+    float: left;
+    font-size: 20px;
+    width: 43px;
+    border-left: 6px #fe5341 solid;
+    margin-left: 295px;
+    padding-left: 11px;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    float: left;
+}
+
+.try5 {
+    padding-left: 85px;
+}
+
+.try5>p {
+    font-size: 12px;
+    color: #737373;
+    font-family: '微软雅黑';
+}
+
+.try5>img {
+    padding-left: 5px;
+}
+
+.second {
+    width: 1000px;
+    margin: 40px 294px;
+}
+
+.second-1 {
+    font-size: 18px;
+    border-left: 6px #fe5341 solid;
+    padding-left: 10px;
+}
+
+.second-2 {
+    width: 700px;
+}
+
+.ap {
+    color: #FF0000;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.second-2>p {
+    padding-top: 16px;
+}
+
+.blue- {
+    color: rgb(0, 112, 192);
+    font-weight: bold;
+}
+
+.second-3 {
+    font-size: 18px;
+    border-left: 6px #fe5341 solid;
+    padding-left: 10px;
+}
+
+.red-1 {
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+}
+
+.three {
+    width: 280px;
+    height: 1000px;
+    float: right;
+    position: relative;
+    top: 37px;
+    right: 210px;
+}
+
+.three-2 {
+    font-size: 18px;
+    border-left: 6px #fe5341 solid;
+    padding-left: 16px;
+}
+
+.three-2p {
+    font-size: 40px;
+    font-weight: '微软雅黑';
+    color: #fe5341;
+    padding: 20px 0px 15px;
+}
+
+.three-1>a {
+    font-size: 18px;
+    color: #FFFFFF;
+    background-color: #fe5341;
+    display: block;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.three-3p {
+    text-align: center;
+    margin: 10px 0px;
+    color: #a3a3a3;
+}
+
+.three-5 {
+    font-size: 18px;
+    border-left: 6px #fe5341 solid;
+    padding-left: 16px;
+}
+
+.three-6 {
+    margin-top: 20px;
+    height: 270px;
+    height: 165px;
+}
+
+.three-7 {
+    margin: 10px 0px 20px;
+}
+
+.three-8 {
+    font-size: 16px;
+    color: #474747;
+    padding: 5px 0px;
+    font-weight: bold;
+}
+
+.three-9 {
+    color: #a3a3a3;
+    font-size: 14px;
+}
+
+.three-10 {
+    padding-top: 40px;
+}
+
+.three-11 {
+    color: #474747;
+    font-size: 18px;
+    border-left: 6px #fe5341 solid;
+    padding-left: 16px;
+}
+
+.three-12 {
+    padding-top: 20px;
+}

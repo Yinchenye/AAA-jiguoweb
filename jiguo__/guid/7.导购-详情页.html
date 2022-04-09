@@ -2,152 +2,51 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="../css/头.css">
-    <link rel="stylesheet" href="../css/底.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>导购-详情页</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-        
-        .body {
-            background-color: #a3a3a3;
-        }
-        
-        a {
-            text-decoration: none;
-            color: #a3a3a3;
-            font-size: 12px;
-        }
-        
-        .hander {
-            background-color: #f7f7f7;
-            display: block;
-            border-top: 1px #cfc1c1 solid;
-        }
-        
-        .handers {
-            width: 1000px;
-            min-width: 1000px;
-            margin: 0 auto;
-        }
-        
-        .onee {
-            color: #979797;
-            font-size: 13px;
-        }
-        
-        .twoo {
-            width: 700px;
-            height: 4796px;
-            background-color: #fff;
-            border-radius: 6px;
-            border-bottom: 25px;
-            margin-top: 20px;
-        }
-        
-        .tw001>p {
-            color: #474747;
-            font-size: 26px;
-            padding-top: 20px;
-            padding-left: 25px;
-        }
-        
-        .susu {
-            margin-top: 15px;
-            margin-left: 20px;
-        }
-        
-        .susu1 {
-            width: 20px;
-            height: 20px;
-            border-radius: 10px;
-            background: url(./img/tx.jpg)no-repeat;
-            float: left;
-        }
-        
-        .susu>span {
-            font-size: 12px;
-            color: #a3a3a3;
-            margin: 0px 15px;
-        }
-        
-        .susu2 {
-            font-size: 12px;
-            color: #a3a3a3;
-            float: right;
-            margin-right: 20px;
-        }
-        
-        .thr {
-            border-top: 1px #a3a3a3 solid;
-            margin-top: 20px;
-        }
-        
-        .thr>p {
-            font-family: '微软雅黑';
-            padding: 10px 16px;
-            font-size: 14px;
-        }
-        
-        .thr>p>img {
-            padding-left: 10px;
-        }
-        
-        .gang {
-            padding: 20px;
-            font-size: 14px;
-        }
-        
-        .thr>.gangb {
-            font-size: 16px;
-            color: #333333;
-            font-weight: bold;
-            text-align: center;
-            padding: 20px;
-        }
-        
-        .didi1 {
-            padding: 35px 0px 35px 20px;
-            font-size: 14px;
-            color: #a3a3a3;
-            font-family: '微软雅黑';
-            list-style: none;
-        }
-        
-        .didi1>li>a {
-            font-size: 14px;
-        }
-    </style>
+    <link rel="stylesheet" href="../css/style/shouye.css" />
+    <link rel="stylesheet" href="../css/style/导购-详情页.css">
+    <script src="../js/art-template.js"></script>
+    <script src="../js/ajax.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/shouye.js"></script>
 </head>
 
 <body>
-
-    <div class="header">
-        <span><img src="../img/logonew.png" alt=""></span>
-        <ul>
-            <li><a href="../1.网站首页.html">首页</a></li>
-            <li><a href="../play/2.酷玩模块-最新.html">酷玩</a></li>
-            <li><a href="./5.导购-最新.html">导购</a></li>
-            <li><a href="../18.免费试用.html">试用</a></li>
-            <li><a href="../report/14.报告-最新.html">报告</a></li>
+    <!-- 公共部分顶部导航栏 -->
+    <div id="top_banner">
+        <img src="../img/logonew.png" alt="" width="130px;" />
+        <ul class="clearfix">
+            <li>
+                <a href="">首页</a>
+            </li>
+            <li>
+                <a href="" target="_blank">酷玩</a>
+            </li>
+            <li>
+                <a href="" target="_blank">导购</a>
+            </li>
+            <li>
+                <a href="">试用</a>
+            </li>
+            <li>
+                <a href="../report/14.报告-最新.html">报告</a>
+            </li>
         </ul>
-        <span><img src="../img/search.png" alt=""></a></span>
-
-        <span><a href="../16.注册页面.html">注册</a></span>
-        <span><a href="../19.登录页面.html">登录</a></span>
+        <div id="search_register">
+            <img src="../css/img/search.png" alt="" id="search" />
+            <a href="../16.注册页面.html" id="register">注册</a>
+            <a href="../19.登录页面.html" id="login">登录</a>
+        </div>
     </div>
-
-
-
     <div class="hander">
         <div class="handers">
             <div class="onee">
-                <a href="../1.网站首页.html">首页</a>>
-                <a href="./6.导购-最热.html">导购</a>>
-                <a href="./5.导购-最新.html">最新</a>> 2016，这8支钢笔够你装逼一整年
+                <a href="../index.html">首页</a> &gt;
+                <a href="">导购</a> &gt;
+                <a href="">最新</a> &gt; 2016，这8支钢笔够你装逼一整年
             </div>
             <div class="twoo">
                 <div class="tw001">
@@ -158,7 +57,6 @@
                     </div>
                 </div>
                 <div class="thr">
-
                     <p class="gang">钢笔，作为一个书写工具，像手表一样，不但具有功能性，还拥有了装饰（bi）等功能。不过总有人在死磕钢笔的本质：</p>
                     <p><img src="../img/detail.jpg" alt=""></p>
                     <p class="gangb">选一支钢笔</p>
@@ -201,57 +99,139 @@
                         <li><a href="">下一篇：他用12年找一把完美 剃须刀，给你2万字终极购买指南</a></li>
                     </ul>
                 </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="footer">
-        <footer class="foot">
-            <section class="wrap">
-                <div class="fix">
-                    <dl><img src="../img/code.png" width="200" height="200" /></dl>
-                    <dl>
-                        <dt><img src="../img/logoImg.jpg" /></dt>
-                        <dd>全球酷玩试用导购平台<br>酷·新奇·好玩·品质</dd>
-                        <dd>微信添加“JguoJguo” <br>获取我们的服务。</dd>
-                    </dl>
-                    <dl>
-                        <dt>免费试用</dt>
-                        <dd><a href="../18.免费试用.html">试用流程</a></dd>
-                        <dd><a href="../18.免费试用.html">如何提高成功率</a></dd>
-                    </dl>
-                    <dl>
-                        <dt>友情链接</dt>
-                        <dd><a href="#">智东西</a><a href="#">WEIBUSI</a></dd>
-                        <dd><a href="#">搜狐IT</a><a href="#">腾讯科技</a></dd>
-                        <dd><a href="#">搜狐数码</a><a href="#">凤凰科技</a></dd>
-                        <dd><a href="#">凤凰数码</a><a href="#">PConline</a></dd>
-                        <dd><a href="#">泡泡网</a><a href="#">3W咖啡</a></dd>
-                        <dd><a href="#">ZUK社区</a><a href="#">亿觅emie</a></dd>
-                        <dd><a href="#">极客公园</a><a href="#">易迅易启玩</a></dd>
-                        <dd><a href="#">果库</a></dd>
-                    </dl>
-                    <dl>
-                        <dt>购买攻略</dt>
-                        <dd><a href="#">美亚海淘教程</a></dd>
-                        <dd><a href="#">日亚海淘教程</a></dd>
-                        <dd><a href="#">海淘转运攻略</a></dd>
-                        <dd><a href="#">kickstarter 众筹购买攻略</a></dd>
-                        <dd><a href="#">indiegogo 众筹购买攻略</a></dd>
-                    </dl>
-                    <dl>
-                        <dt>厂商合作</dt>
-                        <dd><a href="../17.商务合作.html">关于极果</a></dd>
-                        <dd><a href="">联系我们</a></dd>
-                        <dd><a href="">商务合作：BD@jiguo.com</a></dd>
-                        <dd><a href="">CEO邮箱：CEO@jiguo.com</a></dd>
+                <div class="fourr">
+                    <dl class="detailFeel">
+                        <dd>
+                            <a href="javascript:void(0);">喜欢 15</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:void(0);">分享</a>
+                        </dd>
                     </dl>
                 </div>
+            </div>
 
-            </section>
+        </div>
+    </div>
+    <!-- 公共部分底部 -->
+    <div class="bottom-max">
+        <div class="bottom clearfix">
+            <!-- 底部左侧二维码 -->
+            <div id="bottom-left">
+                <img src="../img/code.png" alt="" />
+            </div>
 
-        </footer>
-        <p class="copy">© 2016 极果版权所有</p>
+            <!-- 底部中间部分 -->
+            <div id="bottom-middle">
+                <img src="../img/logoImg.jpg" alt="" />
+                <p>全球酷玩试用导购平台酷·新奇·好玩·品质</p>
+                <p>微信添加“JguoJguo”获取我们的服务。</p>
+            </div>
+
+            <!-- 底部右侧 -->
+            <div id="bottom-right">
+                <dl class="bottom-right-dl">
+                    <dt>免费试用</dt>
+                    <dd>
+                        <a href="../18.免费试用.html">试用流程</a>
+                    </dd>
+                    <dd>
+                        <a href="../18.免费试用.html">如何提高成功率</a>
+                    </dd>
+                </dl>
+                <dl class="bottom-right-dl">
+                    <div class="bottom-right-dl-left">
+                        <dt>友情链接</dt>
+                        <dd>
+                            <a href="javascript:;">智东西</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;">搜狐IT</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;">搜狐数码</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;">凤凰数码</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;">泡泡网</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;">ZUK社区</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;">极客公园</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;">果库</a>
+                        </dd>
+                    </div>
+
+                    <div class="bottom-right-dl-right">
+                        <dd>
+                            <a href="javascript:;">WEIBUSI</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;">腾讯科技</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;">凤凰科技</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;">PConline</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;">3W咖啡</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;">亿觅emie</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;">易迅易启玩</a>
+                        </dd>
+                    </div>
+                </dl>
+                <dl class="bottom-right-dl">
+                    <dt>购买攻略</dt>
+                    <dd>
+                        <a href="javascript:;">美亚海淘教程</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">日亚海淘教程</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">海淘转运攻略</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">kickstarter 众筹购买攻略</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">indiegogo 众筹购买攻略</a>
+                    </dd>
+                </dl>
+                <dl class="bottom-right-dl">
+                    <dt>厂商合作</dt>
+                    <dd>
+                        <a href="javascript:;">关于极果</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">联系我们</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">商务合作：BD@jiguo.com</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">CEO邮箱：CEO@jiguo.com</a>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <!-- 最底部版权和返回顶部 -->
+        <p class="banquan">2016 极果版权所有</p>
+        <div class="back">
+            <img src="../css/img/back.png" />
+        </div>
     </div>
 </body>
 
